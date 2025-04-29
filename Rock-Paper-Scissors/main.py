@@ -1,13 +1,7 @@
 def getChoices():
-    playerChoice='rock'
+    playerChoice=input('enter your choice ')
     computerChoice='paper'
-
-    return playerChoice
-getChoices()
-
-def greating():
-    print('hello coder')
-    return 'hi'
-
-responce = greating()
-print(responce)
+    choices={'player': playerChoice, 'computer': computerChoice}
+    return choices
+choices=getChoices()
+print(choices)
