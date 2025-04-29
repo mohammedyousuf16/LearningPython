@@ -7,4 +7,7 @@ def getChoices():
     return choices
 
 def checkWin(player,computer):
-    return [player,computer]
+    print(f"you choce {player}, and computer choce {computer}")
+    if player==computer:
+        return 'tie'
+checkWin('rock','rock')
