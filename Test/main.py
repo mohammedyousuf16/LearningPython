@@ -102,22 +102,23 @@
 #Strings
 'boss'
 "baby boss"
-name=" boss baby"
-phrase= "boss " + name + ' baby boss'
-print(phrase)
-name += ' is my name' 
-print(name)
-# multiline string
-print(""" Baby boss is 
+# name=" boss baby"
+# phrase= "boss " + name + ' baby boss'
+# print(phrase)
+# name += ' is my name' 
+# print(name)
+# # multiline string
+# print(""" Baby boss is 
       
-      genious and 
+#       genious and 
 
-      stupid at the same time
-      """)
+#       stupid at the same time
+#       """)
 
-print('boss baby'.upper())
-print('boss baby'.isupper())
-print('boss baby'.lower())
-print('boss baby'.islower())
-print('boss baby'.title())
-print('boss baby'.())
+# print('boss baby'.upper())
+# print('boss baby'.isupper())
+# print('boss baby'.lower())
+# print('boss baby'.islower())
+# print('boss baby'.title())
+# print('boss baby'.())
+
