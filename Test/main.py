@@ -86,9 +86,15 @@
 # print(False and []) #False
 
 # Bitwise Operators
-&  #performes binary AND
-| #performes binary OR
-^ #performes binary XOR
-~ #performes binary NOR 
-<< #shift left operation
->> #shift right operation
+# &  #performes binary AND
+# | #performes binary OR
+# ^ #performes binary XOR
+# ~ #performes binary NOR 
+# << #shift left operation
+# >> #shift right operation
+
+# Ternary operator
+def is_adult():
+    age=19
+    return True if age>18 else False
+print(is_adult())
