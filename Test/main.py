@@ -19,5 +19,6 @@ my_name='Hello world'
 print (age)
 print (HEIGH)
 print (name)
-print (my_name)
+# this is a commented line
+print (my_name) #this is an inline comment
 
