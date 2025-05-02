@@ -1,6 +1,6 @@
 import random
 def getChoices():
-    playerChoice=input('enter your choice ')
+    playerChoice=input('enter your choice - [rock, paper, scissors]')
     options=['rock', 'paper', 'scissors']
     computerChoice=random.choice(options)
     choice={'player': playerChoice, 'computer': computerChoice}
