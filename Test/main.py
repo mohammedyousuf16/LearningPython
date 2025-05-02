@@ -62,25 +62,33 @@
 
 # Boolean Operators
 
-condition1=True
-condition2=False
+# condition1=True
+# condition2=False
 
-not condition1 #false
-not condition2 #true
-condition1 and condition2 #false
-condition1 or condition2 #true
+# not condition1 #false
+# not condition2 #true
+# condition1 and condition2 #false
+# condition1 or condition2 #true
 
-#OR operator
-print(0 or 1) #1
-print(False or 'hey') #hey
-print('hey' or 'hi') #hey
-print([] or False) #False
-print(False or []) #[]
+# #OR operator
+# print(0 or 1) #1
+# print(False or 'hey') #hey
+# print('hey' or 'hi') #hey
+# print([] or False) #False
+# print(False or []) #[]
 
-#And operator
-print(0 and 1) #0
-print(1 and 0) #0
-print(False and 'hey') #False
-print('hey' and 'hi') #hi
-print([] and False) #False
-print(False and []) #False
+# #And operator
+# print(0 and 1) #0
+# print(1 and 0) #0
+# print(False and 'hey') #False
+# print('hey' and 'hi') #hi
+# print([] and False) #False
+# print(False and []) #False
+
+# Bitwise Operators
+&  #performes binary AND
+| #performes binary OR
+^ #performes binary XOR
+~ #performes binary NOR 
+<< #shift left operation
+>> #shift right operation
