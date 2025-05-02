@@ -50,12 +50,37 @@
 
 # Comparison operators
 
-a=1
-b=1
+# a=1
+# b=1
 
-a==b
-a!= b
-a<b
-a>b
-a<=b
-a>=b
+# a==b
+# a!= b
+# a<b
+# a>b
+# a<=b
+# a>=b
+
+# Boolean Operators
+
+condition1=True
+condition2=False
+
+not condition1 #false
+not condition2 #true
+condition1 and condition2 #false
+condition1 or condition2 #true
+
+#OR operator
+print(0 or 1) #1
+print(False or 'hey') #hey
+print('hey' or 'hi') #hey
+print([] or False) #False
+print(False or []) #[]
+
+#And operator
+print(0 and 1) #0
+print(1 and 0) #0
+print(False and 'hey') #False
+print('hey' and 'hi') #hi
+print([] and False) #False
+print(False and []) #False
