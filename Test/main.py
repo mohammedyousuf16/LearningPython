@@ -33,19 +33,29 @@
 # print(isinstance(length, int))
 # print(isinstance(height, int))
 
-age=20
+# age=20
 
-# arithmatic operators
-add =1 +1
-sub= 2-1
-div=4/2
-mul=2*10
-remainder=4%3
-power=4**2
-floorDivition=5//2 #it gives the nearest whole value  (2.5 but it will give 2)
+# Arithmatic operators
+# add =1 +1
+# sub= 2-1
+# div=4/2
+# mul=2*10
+# remainder=4%3
+# power=4**2
+# floorDivition=5//2 #it gives the nearest whole value  (2.5 but it will give 2)
 
-age=10
-age += 5
-print(age)
+# age=10
+# age += 5
+# print(age)
 
+# Comparison operators
 
+a=1
+b=1
+
+a==b
+a!= b
+a<b
+a>b
+a<=b
+a>=b
