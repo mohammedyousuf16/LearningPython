@@ -12,11 +12,12 @@
 
 name = 'bob'
 age = 30
-__Name__= 'fanboy'
+__Name__= 'fanboy'; print(__Name__)
 HEIGH= 'name is HEIGH'
 my_name='Hello world'
-print (__Name__)
+# print (__Name__)
 print (age)
 print (HEIGH)
 print (name)
 print (my_name)
+
