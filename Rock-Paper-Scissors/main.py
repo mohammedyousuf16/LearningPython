@@ -1,11 +1,17 @@
 import random
+player_choise_valid=False
+options=['rock', 'paper', 'scissors']
 def getChoices():
     playerChoice=input('enter your choice - [rock, paper, scissors]')
     options=['rock', 'paper', 'scissors']
     computerChoice=random.choice(options)
     choice={'player': playerChoice, 'computer': computerChoice}
-    return choice
-
+    return choice, playerChoice
+getChoiceResult= getChoices()
+if getChoiceResult[1] in options:
+    player_choise_valid=True
+else:
+    print(f" select one of the option")
 def checkWin(player,computer):
     print(f"you choce {player}, and computer choce {computer}")
     if player==computer:
@@ -30,6 +36,7 @@ def checkWin(player,computer):
     
 
 
-choices = getChoices()
-result=checkWin(choices['player'],choices['computer'])
-print(result)
+choices = getChoiceResult[0]
+if (player_choise_valid == True):
+    result=checkWin(choices['player'],choices['computer'])
+    print(result)
