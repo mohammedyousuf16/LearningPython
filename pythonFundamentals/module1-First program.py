@@ -117,3 +117,12 @@ print(firstName) #output = Johnsmith
 print(firstName*5) #output = JohnsmithJohnsmithJohnsmithJohnsmithJohnsmith
 
 print('23' + '2') #output = 232
+
+#input function
+
+name = input('What is your name? ')
+print('Hello,', name)
+#or 
+print('What is your name? ')
+name = input()  
+print('Hello,', name)
