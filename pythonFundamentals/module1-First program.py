@@ -128,7 +128,12 @@ print('23' + '2') #output = 232
 #print('Hello,', name)
 
 #exercise 2
-login = input('Enter your login: ')
-language = input('Enter your native language: ')
+#login = input('Enter your login: ')
+#language = input('Enter your native language: ')
 
-print('Your login is', login, 'and you speak', language)
+#print('Your login is', login, 'and you speak', language)
+
+#Type casting
+height_cm= input('Enter your height in cm: ')
+float_height_cm = float(height_cm) / 30.48
+print('Your height in feet is', float_height_cm) #output = Your height in cm is 180
