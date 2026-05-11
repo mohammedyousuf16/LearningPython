@@ -11,6 +11,7 @@ print('I\'m lerarning python', 'and having fun')
 print('I\'m lerarning\npython')
 
 # Variables
+
 greeting='Hello, friend!'
 print(greeting)
 #variables value change if you re-assign to a differnt value
@@ -21,3 +22,16 @@ print(greeting)
 #correctNameVariable
 #correctName89Variable
 #89incorrectVariable
+
+#Data types
+
+greeting= 'Hello, Friend' # string
+age=35 #int
+speed1= 4.5 #float
+speed2=4.0 #float
+speed3=4. #float
+
+am_i_ugly= True  #Boolean
+am_i_ugly= False #Boolean
+
+
