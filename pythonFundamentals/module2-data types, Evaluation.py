@@ -107,3 +107,18 @@ if answer_a == 'y':
         print('sorry to hear that you don\'t like Asia')
 else: 
     print('sorry to hear that')
+
+# Exercise 4
+
+purchasedBefore = int(input('How many days ago have you purchased the item? ')) 
+itemUsed = input('Have you used the item at all [y/n]?  ')
+brokenDown = input('Has the item broken down on its own [y/n]? ')
+
+if purchasedBefore < 10 and itemUsed == 'n':
+    print('you are eligible for the refund')
+elif brokenDown == 'y':
+    print('you are eligible for the refund')
+else:
+    print('u r not')
+
+# while loop
