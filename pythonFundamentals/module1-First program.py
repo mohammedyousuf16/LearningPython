@@ -148,3 +148,9 @@ temp_c = input('Enter the temperature in Celsius: ')
 temp_f = float(temp_c) * 1.8 + 32
 temp_statement= str(temp_c) + ' degrees Celsius is equal to ' + str(temp_f) + ' degrees Fahrenheit.'
 print(temp_statement)
+
+#exercise 3
+hours= input('How many hours did you work last month? ')
+hourlyRate= input('What is your hourly rate? ')
+earned= float(hours) * float(hourlyRate)
+print('Last month, you earned', earned, 'dollars')
