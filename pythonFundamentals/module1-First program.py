@@ -137,3 +137,14 @@ print('23' + '2') #output = 232
 height_cm= input('Enter your height in cm: ')
 float_height_cm = float(height_cm) / 30.48
 print('Your height in feet is', float_height_cm) #output = Your height in cm is 180
+#or
+height_cm= float(input('Enter your height in cm: '))
+print('Your height in feet is', height_cm / 30.48) #output = Your height in cm is 180
+
+year_born = int(input('Enter your year of birth: '))
+print('in 2100, you will be', 2100 - year_born, 'years old') #output = Enter your year of birth: 1990
+
+temp_c = input('Enter the temperature in Celsius: ')
+temp_f = float(temp_c) * 1.8 + 32
+temp_statement= str(temp_c) + ' degrees Celsius is equal to ' + str(temp_f) + ' degrees Fahrenheit.'
+print(temp_statement)
