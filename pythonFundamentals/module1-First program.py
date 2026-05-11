@@ -120,9 +120,15 @@ print('23' + '2') #output = 232
 
 #input function
 
-name = input('What is your name? ')
-print('Hello,', name)
+#name = input('What is your name? ')
+#print('Hello,', name)
 #or 
-print('What is your name? ')
-name = input()  
-print('Hello,', name)
+#print('What is your name? ')
+#name = input()  
+#print('Hello,', name)
+
+#exercise 2
+login = input('Enter your login: ')
+language = input('Enter your native language: ')
+
+print('Your login is', login, 'and you speak', language)
