@@ -87,3 +87,33 @@ ripoff_Amt= income * ripoffland_rate
 taxAmtDiff = ripoff_Amt - lowtax_Amt
 
 print('Your income is 250000 and you would pay',lowtax_Amt ,'income tax in Lowtaxland or',ripoff_Amt,'income tax in Ripoffland. You would save',taxAmtDiff,'by paying taxes in Lowtaxland!')
+
+
+#Reasinging Values
+
+age=28
+print(age)
+newAge= age +5 
+print(newAge) #output = 33
+
+age =28
+age= age + 7
+print(age) #output = 35
+
+age = 28
+age += 7 
+print(age) #output = 35
+age *= 2
+print(age) #output = 70
+age /= 2
+print(age) #output = 35.0
+age -= 7
+print(age) #output = 28.0
+
+#string concatenation
+firstName= 'John' + 'smith'
+print(firstName) #output = Johnsmith
+
+print(firstName*5) #output = JohnsmithJohnsmithJohnsmithJohnsmithJohnsmith
+
+print('23' + '2') #output = 232
