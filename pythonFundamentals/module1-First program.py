@@ -52,3 +52,27 @@ print(0o123) #output = 83
 #hexadecimal numbers
 #starts with 0X or 0x
 print(0x123) #output = 291
+
+#Operators
+print(2-3)
+print(3+7)
+print(2*3)
+
+#standard division
+print(6/2)
+print(7/2)
+
+#integer division
+print(6//2)
+print(7//2) # output = 3 will get the lowest whole number
+
+#modulus division
+print(6%2) #will give the reminder value as 0
+print(7%2) #will give the reminder value as 1
+
+#power operator
+print(2**3) #output = 2*2*2 = 8
+
+#adding int with float will get float
+
+print(2+3.0) #output = 5.0
