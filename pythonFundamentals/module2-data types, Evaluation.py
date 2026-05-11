@@ -29,3 +29,14 @@ print(~5)    #output: -6
 print(5 << 1) #output: 10
 print(5 >> 1) #output: 2
 
+#if statements
+user_age= int(input("Please enter your age: "))
+if user_age > 30:
+    print("You are over 30 years old.")
+    print('you are not eligible for this offer')
+elif user_age == 30:
+    print('you are exactly 30 years old.')
+    print('you are eligible for a better offer')
+else:
+    print('you are below 30 years old.')
+    print('you are eligible for this offer')    
