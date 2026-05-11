@@ -40,3 +40,25 @@ elif user_age == 30:
 else:
     print('you are below 30 years old.')
     print('you are eligible for this offer')    
+
+# Logical operators and condition
+#
+# < less than
+# > greater than
+# <= less than or equal to
+# >= greater than or equal to
+# == equal to
+# != not equal to
+
+password = input("Enter your password: ")
+if password != '--secret':
+    print ('not correct password')
+else:
+    print('correct password')
+
+if 2==2:
+    print('true')
+if 1==2:
+    print('true')
+if 2 == 2.0:
+    print('true')
