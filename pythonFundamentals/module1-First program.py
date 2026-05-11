@@ -35,3 +35,20 @@ am_i_ugly= True  #Boolean
 am_i_ugly= False #Boolean
 
 
+#Numarical Representations
+
+12000300 #hard to read
+12_000_300 #underscores in number (easy to read)
+
+#scientific notations
+#3E4= 3e4 = 3*10000 = 30000
+# 3e-4 = 3E-4 = 3 * 1/10000 = 0.0003
+print(0.000000000000000000000000003) #output = 3e-27
+
+#octal numbers
+#starts with 0o or 0O
+print(0o123) #output = 83
+
+#hexadecimal numbers
+#starts with 0X or 0x
+print(0x123) #output = 291
