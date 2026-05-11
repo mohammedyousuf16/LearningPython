@@ -62,3 +62,18 @@ if 1==2:
     print('true')
 if 2 == 2.0:
     print('true')
+
+# joining multiple conditions
+
+user_age = int(input("Please enter your age: "))
+user_country = input("Please enter your country: ")
+if user_age <25 and user_country == 'USA':
+    print('you are eligible for student discount')
+else:
+    print('you are not eligible for this offer')
+
+user_country = input("Please enter your country: ")
+if user_country == 'USA' or user_country == 'Canada' or user_country == 'UK':
+    print('you are eligible for this offer')
+else:
+    print('you are not eligible for this offer')
