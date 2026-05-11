@@ -20,3 +20,12 @@ print ('learn python')
 first_name = 'John'
 print('your first name is', first_name, 'Welcome to Python!') #output: your first name is John Welcome to Python!
 print('your first name is', first_name, 'Welcome to Python!', sep='-') #output: your first name is-John-Welcome to Python!
+
+# bitwise operators
+print(5 & 3) #output: 1
+print(5 | 3) #output: 7
+print(5 ^ 3) #output: 6
+print(~5)    #output: -6
+print(5 << 1) #output: 10
+print(5 >> 1) #output: 2
+
