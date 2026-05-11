@@ -65,6 +65,7 @@ if 2 == 2.0:
 
 # joining multiple conditions
 
+# using of and operator
 user_age = int(input("Please enter your age: "))
 user_country = input("Please enter your country: ")
 if user_age <25 and user_country == 'USA':
@@ -72,8 +73,37 @@ if user_age <25 and user_country == 'USA':
 else:
     print('you are not eligible for this offer')
 
+# using of or operator
 user_country = input("Please enter your country: ")
 if user_country == 'USA' or user_country == 'Canada' or user_country == 'UK':
     print('you are eligible for this offer')
 else:
     print('you are not eligible for this offer')
+
+#using of not operator
+user_country = input("Please enter your country: ")
+if not user_country == 'Germany':
+    print('you are not from Germany')
+else:
+    print('you are from Germany')
+
+#using all three and or not operators together
+
+user_age = int(input("Please enter your age: "))    
+user_country = input("Please enter your country: ")     
+
+if not user_country == 'Germany' and user_age < 25 or user_country == 'USA' and user_age > 30:
+    print('you qualify')
+else: 
+    print('you do not qualify')
+
+# Nested if statements
+answer_a = input('do you like travelling y/n?')
+if answer_a == 'y':
+    answer_b= input('do you like Asia y/n?')
+    if answer_b == 'y':
+        print('excellent you can win ticket to thailand')
+    else:
+        print('sorry to hear that you don\'t like Asia')
+else: 
+    print('sorry to hear that')
