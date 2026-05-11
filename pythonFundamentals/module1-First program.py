@@ -16,3 +16,8 @@ print(greeting)
 #variables value change if you re-assign to a differnt value
 greeting='Hi, everybody!'
 print(greeting)
+
+#_correctNameVariable
+#correctNameVariable
+#correctName89Variable
+#89incorrectVariable
