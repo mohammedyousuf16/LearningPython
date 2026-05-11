@@ -76,3 +76,14 @@ print(2**3) #output = 2*2*2 = 8
 #adding int with float will get float
 
 print(2+3.0) #output = 5.0
+
+# exercise 1
+
+income = 250_000
+lowtaxland_rate=0.05
+ripoffland_rate=0.43
+lowtax_Amt= income * lowtaxland_rate
+ripoff_Amt= income * ripoffland_rate
+taxAmtDiff = ripoff_Amt - lowtax_Amt
+
+print('Your income is 250000 and you would pay',lowtax_Amt ,'income tax in Lowtaxland or',ripoff_Amt,'income tax in Ripoffland. You would save',taxAmtDiff,'by paying taxes in Lowtaxland!')
