@@ -122,3 +122,19 @@ else:
     print('u r not')
 
 # while loop
+counter = 1
+while counter < 11:
+    print(counter)
+    counter += 1
+print('finished')
+
+secretNumber = 14
+print('''
+-----------------------------------
+--- Secret Number Guessing Game ---
+-----------------------------------''')
+userInput = int(input('guess the secret number between 1 and 20: '))
+while userInput != secretNumber:
+    print('wrong guess, try again')
+    userInput =int(input('guess the secret number between 1 and 20: '))
+print('congratualations, you guessed the secret number!')
