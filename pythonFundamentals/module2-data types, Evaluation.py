@@ -181,4 +181,15 @@ while i <5:
     i += 1
 else:
     print(i) # else statement will executed even if the while loop is true
-    
+
+# Exercise 5
+
+while True:
+    userInput = int(input('Guess the year when python 1.0 was released:'))
+    if userInput < 1994:
+        print('It was later than that!')
+    elif userInput > 1994:
+        print('It was earlier than that!')
+    else:
+        print('correct')
+        break
