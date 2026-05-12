@@ -138,3 +138,16 @@ while userInput != secretNumber:
     print('wrong guess, try again')
     userInput =int(input('guess the secret number between 1 and 20: '))
 print('congratualations, you guessed the secret number!')
+
+# For loop
+for letter in 'hello':
+    print('current letter is:', letter)
+
+for counter in range(1,11):
+    print(counter) #output: 1 2 3 4 5 6 7 8 9 10
+
+for counter in range (11):
+    print(counter) #output: 0 1 2 3 4 5 6 7 8 9 10
+
+for counter in range(1,11,2):
+    print(counter) #output: 1 3 5 7 9
