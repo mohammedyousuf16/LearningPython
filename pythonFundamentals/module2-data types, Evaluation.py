@@ -165,3 +165,20 @@ for i in range(1, 20):
     if i % 5 == 0:
         continue
     print (i) #output: 1 2 3 4 6 7 8 9 11 12 13 14 16 17 18 19
+
+# loops additional
+
+for i in range(11):
+    pass # this is a placeholder for future code, it does nothing and allows the loop to run without any action
+
+for a in range (1,6):
+    for b in range(1,6):
+        print(a, 'x' ,b, '=', a*b) # this will print the multiplication table from 1 to 5
+
+i = 5
+while i <5:
+    print(i)
+    i += 1
+else:
+    print(i) # else statement will executed even if the while loop is true
+    
