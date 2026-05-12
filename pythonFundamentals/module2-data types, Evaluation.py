@@ -151,3 +151,17 @@ for counter in range (11):
 
 for counter in range(1,11,2):
     print(counter) #output: 1 3 5 7 9
+
+# Break and continue statements
+
+while True:
+    name = input('enter your name or EXIT to quit: ')
+    if name == 'EXIT':
+        break
+    print('hello', name)
+
+
+for i in range(1, 20):
+    if i % 5 == 0:
+        continue
+    print (i) #output: 1 2 3 4 6 7 8 9 11 12 13 14 16 17 18 19
