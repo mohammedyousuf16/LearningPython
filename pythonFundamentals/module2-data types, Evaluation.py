@@ -1,4 +1,4 @@
-# More about operators
+'''# More about operators
 print(2 + 3)  
 print(5 - 2)
 print(+12) #output: 12
@@ -129,10 +129,10 @@ while counter < 11:
 print('finished')
 
 secretNumber = 14
-print('''
+print(''
 -----------------------------------
 --- Secret Number Guessing Game ---
------------------------------------''')
+-----------------------------------'')
 userInput = int(input('guess the secret number between 1 and 20: '))
 while userInput != secretNumber:
     print('wrong guess, try again')
@@ -193,3 +193,14 @@ while True:
     else:
         print('correct')
         break
+        '''
+
+# introduction to lists
+
+emptyList = []
+top_cities = ['New York', 'London', 'Tokyo', 'Paris']
+print(f"the top cities are: {top_cities[1]}") #output: the top cities are: London --> this is a string vlaue, not a list
+print(f"the top cities are: {top_cities[-1]}") #output: the top cities are: Paris 
+print(f"the top cities are: {top_cities[0:2]}") #output: the top cities are: ['New York', 'London'] --> if you use slicing, it will return a list, even if it contains only one element
+print(f"the top cities are: {top_cities[2:]}") #output: the top cities are: ['Tokyo', 'Paris']
+print(f"the top cities are: {top_cities[:3]}") #output: the top cities are: ['New York', 'London', 'Tokyo']]
