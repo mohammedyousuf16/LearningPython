@@ -372,7 +372,6 @@ for row in table:
 
 table =[[i for i in range(1,6)] for j in range(4)]
 print(table) #output: [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5]]
-'''
 
 # adding  and multiplying lists
 
@@ -383,3 +382,17 @@ print(listall) #output: ['new york', 'los angeles', 'chicago', 'london', 'manche
 
 listNum = [0, 1] * 10
 print(listNum)
+'''
+# further string features
+
+fav = 'green day'
+print(fav[6]) #output: d
+print(fav[:6]) #output: y
+#fav[6] = 'M' #output: TypeError: 'str' object does not support item assignment --> this is because strings are immutable, you cannot change a character in a string
+
+userNum = input('enter a number: ')
+if userNum.isnumeric():
+    print('you entered a valid number')
+else:
+    print('you did not enter a valid number')
+    
