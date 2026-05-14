@@ -423,7 +423,6 @@ for element in userData:
 
 userData = ('John', 30, 'USA') + ('Developer', 'Python')
 print(userData) #output: ('John', 30, 'USA', 'Developer', 'Python')
-'''
 # tuples - lists
 city1= ('London', 'UK', 8.90)
 city2 = ['Paris', 'France', 2.14]
@@ -437,3 +436,30 @@ for capital in capitals:
 userdata = ('john', 'america', 1994, [77.0, 80.0, 85.0])
 userdata[3].append(73.0)
 print(userdata) #output: ('john', 'america', 1994, [77.0, 80.0, 85.0, 73.0]) 
+
+'''
+# Exercise 7
+
+connections = [
+    ('Amsterdam', 'Dublin', 100),
+    ('Amsterdam', 'Rome', 140),
+    ('Rome', 'Warsaw', 130),
+    ('Minsk', 'Prague', 95),
+    ('Stockholm', 'Rome', 190),
+    ('Copenhagen', 'Paris', 120),
+    ('Madrid', 'Rome', 135),
+    ('Lisbon', 'Rome', 170),
+    ('Dublin', 'Rome', 170),
+    ]
+
+routesToRome = 0 
+TotalFlightTime = 0
+for connection in connections:
+    if connection[1] == 'Rome':
+        #averageFlightTime += connection[2]
+        TotalFlightTime += connection[2]
+        routesToRome += 1
+        
+print(TotalFlightTime, routesToRome)
+averageFlightTime = TotalFlightTime / routesToRome
+print(f'{routesToRome} connections lead to Rome with an average flight time of {averageFlightTime} minutes')
