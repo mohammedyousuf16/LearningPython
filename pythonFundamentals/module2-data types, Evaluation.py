@@ -315,7 +315,6 @@ name = input('enter your name: ').capitalize()
 if name not in invited_guests:
     print(f'{name} is not invited to the party')
 else:    print(f'{name} is invited to the party')
-'''
 # copying lists
 
 name_original = 'john'
@@ -337,3 +336,19 @@ listOriginal = ['a', 'b', 'c']
 listNew = listOriginal[:2] #output: listNew is ['a', 'b']
 listOriginal[0]= 'x' #output: listNew is ['a', 'b']
 print(f"listOriginal is {listOriginal} and listNew is {listNew}") 
+'''
+
+# list comprehensions
+
+numbers = [1, 2, 3, 4, 5]
+numbers=[]
+for i in range (1,101):
+    numbers.append(i)
+print(numbers) #output: [1, 2, 3, 4, 5, ..., 100]
+
+numbers = [i for i in range(1,101)]
+print(numbers) #output: [1, 2, 3, 4, 5, ..., 100]
+
+numbers = [i for i in range(1,101) if i % 3 !=0]
+print(numbers) 
+
