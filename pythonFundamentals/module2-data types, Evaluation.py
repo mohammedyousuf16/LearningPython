@@ -382,7 +382,6 @@ print(listall) #output: ['new york', 'los angeles', 'chicago', 'london', 'manche
 
 listNum = [0, 1] * 10
 print(listNum)
-'''
 # further string features
 
 fav = 'green day'
@@ -396,3 +395,18 @@ if userNum.isnumeric():
 else:
     print('you did not enter a valid number')
     
+'''
+# Introduction to tuples
+
+# Lists are mutable & tuples are immutable
+
+emptyTuple = ()
+oneElementTuple = (1,)
+twoElementTuple = (1, 2)
+threeElementTuple = 1, 2, 3
+print(oneElementTuple,"\n", twoElementTuple, "\n", threeElementTuple) #output: (1,) (1, 2) (1, 2, 3)
+
+userData = ('John', 30, 'USA')
+userData[0] #output: 'John'
+userData[1] #output: 30
+#userData.append('UK') output AttributeError: 'tuple' object has no attribute 'append' 
