@@ -249,7 +249,6 @@ sum = 0.0
 for spending in spendings:
     sum += spending
 print(f"total spendings are: {sum}") #output: total spendings are: 214.97
-'''
 # Exercise 6
 spendings = [1346.0, 987.50, 1734.40, 2567.0, 3271.45, 2500.0, 2130.0, 2510.30, 2987.34, 3120.50, 4069.78, 1000.0]
 lowSpend=0
@@ -265,3 +264,39 @@ for spending in spendings:
         norSpend +=1
 print(f"Numbers of months with low spendings: {lowSpend}, normal spendings: {norSpend}, high spendings: {higSpend}") 
 #output: Numbers of months with low spendings: 1, normal spendings: 6, high spendings: 5
+
+'''
+
+#list change positions
+
+first = input('enter first value: ')
+second = input('enter second value: ')
+print(f"before changing positions: first value is {first} and second value is {second}")
+temp = first
+first = second
+second = temp
+print(f"after swapping : {first}, {second}")
+
+first = input('enter first value: ')
+second = input('enter second value: ')
+print(f"before changing positions: first value is {first} and second value is {second}")
+first, second = second, first
+print(f"after swapping : {first}, {second}")
+
+top_cities = ['New York', 'London', 'Tokyo', 'Paris']
+top_cities[0], top_cities[-1] = top_cities[-1], top_cities[0]
+print(top_cities) #output: ['Paris', 'London', 'Tokyo', 'New York']
+
+top_cities = ['New York', 'London', 'Tokyo', 'Paris']
+top_cities.sort()
+print(top_cities) #output: ['London', 'New York', 'Paris', 'Tokyo'] 
+
+random_numbers = [5, 2, 9, 1, 5, 6]
+random_numbers.sort()
+print(random_numbers) #output: [1, 2, 5, 5, 6, 9]
+random_numbers.sort(reverse=True)
+print(random_numbers) #output: [9, 6, 5, 5, 2, 1]
+
+top_cities = ['New York', 'London', 'Tokyo', 'Paris']
+print(sorted(top_cities)) #output: ['London', 'New York', 'Paris', 'Tokyo'] --> this will return a new sorted list without modifying the original list
+print(top_cities) #output: ['New York', 'London', 'Tokyo', 'Paris'] --> original list is not modified
