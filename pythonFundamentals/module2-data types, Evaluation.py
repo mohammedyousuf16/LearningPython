@@ -336,7 +336,6 @@ listOriginal = ['a', 'b', 'c']
 listNew = listOriginal[:2] #output: listNew is ['a', 'b']
 listOriginal[0]= 'x' #output: listNew is ['a', 'b']
 print(f"listOriginal is {listOriginal} and listNew is {listNew}") 
-'''
 
 # list comprehensions
 
@@ -352,3 +351,25 @@ print(numbers) #output: [1, 2, 3, 4, 5, ..., 100]
 numbers = [i for i in range(1,101) if i % 3 !=0]
 print(numbers) 
 
+'''
+
+# Nested list 
+
+cells = [['a1', 'a2', 'a3'], ['b1', 'b2', 'b3']]
+cells[0] #output: ['a1', 'a2', 'a3']
+cells[0][1] #output: 'a2'
+
+for x in cells:
+    print (f"elements: {x}") #output: elements: ['a1', 'a2', 'a3'] and elements: ['b1', 'b2', 'b3']
+
+for x in cells:
+    for y in x:
+        print(f"elements: {y}") #output: elements: a1, elements: a2, elements: a3, elements: b1, elements: b2, elements: b3
+
+table = [['a1', 'a2', 'a3'], ['b1', 'b2', 'b3']]
+for row in table:
+    for cell in row:
+        print(cell, end=' ') #output: a1 a2 a3 b1 b2 b3
+
+table =[[i for i in range(1,6)] for j in range(4)]
+print(table) #output: [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5]]
