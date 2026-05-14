@@ -193,7 +193,7 @@ while True:
     else:
         print('correct')
         break
-        '''
+       
 
 # introduction to lists
 
@@ -204,3 +204,16 @@ print(f"the top cities are: {top_cities[-1]}") #output: the top cities are: Pari
 print(f"the top cities are: {top_cities[0:2]}") #output: the top cities are: ['New York', 'London'] --> if you use slicing, it will return a list, even if it contains only one element
 print(f"the top cities are: {top_cities[2:]}") #output: the top cities are: ['Tokyo', 'Paris']
 print(f"the top cities are: {top_cities[:3]}") #output: the top cities are: ['New York', 'London', 'Tokyo']]
+
+ '''
+# Deleting elements from a list
+
+top_cities = ['New York', 'London', 'Tokyo', 'Paris']
+del top_cities[2]
+print(top_cities) #output: ['New York', 'London', 'Paris']
+top_cities = ['New York', 'London', 'Tokyo', 'Paris']
+del top_cities[1:3]
+print(top_cities) #output: ['New York', 'Paris']
+top_cities = ['New York', 'London', 'Tokyo', 'Paris']
+del top_cities[:]
+print(top_cities) #output: []
