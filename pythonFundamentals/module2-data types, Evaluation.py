@@ -265,7 +265,6 @@ for spending in spendings:
 print(f"Numbers of months with low spendings: {lowSpend}, normal spendings: {norSpend}, high spendings: {higSpend}") 
 #output: Numbers of months with low spendings: 1, normal spendings: 6, high spendings: 5
 
-'''
 
 #list change positions
 
@@ -300,3 +299,20 @@ print(random_numbers) #output: [9, 6, 5, 5, 2, 1]
 top_cities = ['New York', 'London', 'Tokyo', 'Paris']
 print(sorted(top_cities)) #output: ['London', 'New York', 'Paris', 'Tokyo'] --> this will return a new sorted list without modifying the original list
 print(top_cities) #output: ['New York', 'London', 'Tokyo', 'Paris'] --> original list is not modified
+'''
+
+# list checking presence 
+for char in 'happy birthday':
+    print(char) #output: h a p p y   b i r t h d a y
+
+invited_guests = ['Alice', 'Bob', 'Charlie', 'David']
+name = input('enter your name: ')
+if name in invited_guests:
+    print('you are invited to the party')
+else:    print('you are not invited to the party')
+
+invited_guests = ['Alice', 'Bob', 'Charlie', 'David']
+name = input('enter your name: ').capitalize()
+if name not in invited_guests:
+    print(f'{name} is not invited to the party')
+else:    print(f'{name} is invited to the party')
