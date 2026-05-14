@@ -409,7 +409,6 @@ userData = ('John', 30, 'USA')
 userData[0] #output: 'John'
 userData[1] #output: 30
 #userData.append('UK') output AttributeError: 'tuple' object has no attribute 'append' 
-'''
 # Tuple operations
 
 userData = ('John', 30, 'USA')
@@ -424,3 +423,17 @@ for element in userData:
 
 userData = ('John', 30, 'USA') + ('Developer', 'Python')
 print(userData) #output: ('John', 30, 'USA', 'Developer', 'Python')
+'''
+# tuples - lists
+city1= ('London', 'UK', 8.90)
+city2 = ['Paris', 'France', 2.14]
+city3 = ('Tokyo', 'Japan', 13.96)
+capitals= [('London', 'UK', 8.90), ['Paris', 'France', 2.14], ('Tokyo', 'Japan', 13.96)]
+
+for capital in capitals:
+    print(f'Name: {capital[0]}, Country: {capital[1]}, Population: {capital[2]} million')
+
+
+userdata = ('john', 'america', 1994, [77.0, 80.0, 85.0])
+userdata[3].append(73.0)
+print(userdata) #output: ('john', 'america', 1994, [77.0, 80.0, 85.0, 73.0]) 
