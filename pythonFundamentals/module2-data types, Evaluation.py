@@ -461,7 +461,6 @@ print(TotalFlightTime, routesToRome)
 averageFlightTime = TotalFlightTime / routesToRome
 print(f'{routesToRome} connections lead to Rome with an average flight time of {averageFlightTime} minutes')
 
-'''
 
 # introduction to dictionaries
 
@@ -478,3 +477,45 @@ SpanishAnimals ={
     'bird': 'pajaro',
     'horse': 'caballo',
 }
+print(SpanishAnimals['horse']) #output: caballo
+
+tennisRanking = {
+    1: 'Novak Djokovic',
+    2: 'Carlos Alcaraz',
+    3: 'Daniil Medvedev',
+}
+print(tennisRanking[2]) #output: Carlos Alcaraz
+
+cityRatings={
+    'Bankok': [7, 8, 9],
+    'Paris': [8, 9, 10],
+    'Tokyo': [9, 9, 10],
+    'New York': [7, 8, 8]
+}
+print(cityRatings['Paris']) #output: [8, 9, 10]
+
+'''
+# dictionary operations
+
+grades={}
+grades['John'] = 'A-'
+grades['Jane'] = 'B'
+print(grades) #output: {'John': 'A-', 'Jane': 'B'}
+grades['John'] = 'A'
+print(grades) #output: {'John': 'A', 'Jane': 'B'} --> this is because we have updated the value of John to A
+grades.update({'Bob': 'C'})
+len(grades) #output: 3
+if 'John' in grades:
+    print('John got grade: ', grades['John']) #output: John got grade: A
+
+del grades['Jane']
+print(grades) #output: {'John': 'A', 'Bob': 'C'} --> this is because we have deleted the key Jane from the dictionary
+
+for stu in grades:
+    print(stu) #output: John Bob --> this will print the keys of the dictionary
+
+for grade in grades.values():
+    print(grade) #output: A C --> this will print the values of the dictionary
+
+for stu, grade in grades.items():
+    print(stu, 'got', grade) #output: John got A, Bob got C --> this will print the keys and values of the dictionary
