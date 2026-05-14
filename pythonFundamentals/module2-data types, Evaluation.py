@@ -395,7 +395,6 @@ if userNum.isnumeric():
 else:
     print('you did not enter a valid number')
     
-'''
 # Introduction to tuples
 
 # Lists are mutable & tuples are immutable
@@ -410,3 +409,18 @@ userData = ('John', 30, 'USA')
 userData[0] #output: 'John'
 userData[1] #output: 30
 #userData.append('UK') output AttributeError: 'tuple' object has no attribute 'append' 
+'''
+# Tuple operations
+
+userData = ('John', 30, 'USA')
+print(len(userData)) #output: 3
+
+if 'USA' in userData:
+    print('USA is in the tuple') #output: USA is in the tuple
+else:    print('USA is not in the tuple')
+
+for element in userData:
+    print(element) #output: John 30 USA
+
+userData = ('John', 30, 'USA') + ('Developer', 'Python')
+print(userData) #output: ('John', 30, 'USA', 'Developer', 'Python')
