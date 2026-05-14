@@ -231,7 +231,7 @@ print(BookRatings) #output: [5, 7, 6, 8, 9, 10, 4]
 BookRatings.extend([3, 2]) # this will add 3 and 2 to the end of the list
 print(BookRatings) #output: [5, 7, 6, 8, 9, 10, 4, 3, 2]    
 
- '''
+ 
 
 #iterating lists
 
@@ -249,3 +249,19 @@ sum = 0.0
 for spending in spendings:
     sum += spending
 print(f"total spendings are: {sum}") #output: total spendings are: 214.97
+'''
+# Exercise 6
+spendings = [1346.0, 987.50, 1734.40, 2567.0, 3271.45, 2500.0, 2130.0, 2510.30, 2987.34, 3120.50, 4069.78, 1000.0]
+lowSpend=0
+norSpend=0
+higSpend=0
+
+for spending in spendings:
+    if spending < 1000.0:
+        lowSpend += 1
+    elif spending> 2500.0:
+        higSpend +=1
+    else:
+        norSpend +=1
+print(f"Numbers of months with low spendings: {lowSpend}, normal spendings: {norSpend}, high spendings: {higSpend}") 
+#output: Numbers of months with low spendings: 1, normal spendings: 6, high spendings: 5
