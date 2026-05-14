@@ -299,7 +299,6 @@ print(random_numbers) #output: [9, 6, 5, 5, 2, 1]
 top_cities = ['New York', 'London', 'Tokyo', 'Paris']
 print(sorted(top_cities)) #output: ['London', 'New York', 'Paris', 'Tokyo'] --> this will return a new sorted list without modifying the original list
 print(top_cities) #output: ['New York', 'London', 'Tokyo', 'Paris'] --> original list is not modified
-'''
 
 # list checking presence 
 for char in 'happy birthday':
@@ -316,3 +315,25 @@ name = input('enter your name: ').capitalize()
 if name not in invited_guests:
     print(f'{name} is not invited to the party')
 else:    print(f'{name} is invited to the party')
+'''
+# copying lists
+
+name_original = 'john'
+name_New = name_original #output: name_New is john
+name_original = 'michael' #output: name_New is michael
+print(f"name_original is {name_original} and name_New is {name_New}") 
+
+listOriginal = ['a', 'b', 'c']
+listNew = listOriginal #output: listNew is ['a', 'b', 'c']
+listOriginal[0]= 'x' #output: listNew is ['x', 'b', 'c']
+print(f"listOriginal is {listOriginal} and listNew is {listNew}") 
+
+listOriginal = ['a', 'b', 'c']
+listNew = listOriginal[:] #output: listNew is ['a', 'b', 'c']
+listOriginal[0]= 'x' #output: listNew is ['a', 'b', 'c']
+print(f"listOriginal is {listOriginal} and listNew is {listNew}") 
+
+listOriginal = ['a', 'b', 'c']
+listNew = listOriginal[:2] #output: listNew is ['a', 'b']
+listOriginal[0]= 'x' #output: listNew is ['a', 'b']
+print(f"listOriginal is {listOriginal} and listNew is {listNew}") 
