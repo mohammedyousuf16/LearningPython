@@ -221,7 +221,7 @@ top_cities = ['New York', 'London', 'Tokyo', 'Paris']
 del top_cities
 print(top_cities) #output: NameError: name 'top_cities' is not defined --> this is because we have deleted the entire list
 
- '''
+
 # add elements to a list
 BookRatings = [5, 7, 8, 9, 10]
 BookRatings.append(4) # this will add 4 to the end of the list
@@ -231,5 +231,21 @@ print(BookRatings) #output: [5, 7, 6, 8, 9, 10, 4]
 BookRatings.extend([3, 2]) # this will add 3 and 2 to the end of the list
 print(BookRatings) #output: [5, 7, 6, 8, 9, 10, 4, 3, 2]    
 
+ '''
 
+#iterating lists
 
+top_cities = ['New York', 'London', 'Tokyo', 'Paris']
+for city in top_cities:
+    print(city) #output: New York London Tokyo Paris
+
+top_cities = ['New York', 'London', 'Tokyo', 'Paris']
+print(len(top_cities)) #output: 4
+for cityIndex in range(len(top_cities)):
+    print(f"current index is {cityIndex} and current city is {top_cities[cityIndex]}") #output: current index is 0 and current city is New York, current index is 1 and current city is London, current index is 2 and current city is Tokyo, current index is 3 and current city is Paris
+
+spendings = [32.23, 43.23, 45.72, 23.56, 13.45, 56.78]
+sum = 0.0
+for spending in spendings:
+    sum += spending
+print(f"total spendings are: {sum}") #output: total spendings are: 214.97
