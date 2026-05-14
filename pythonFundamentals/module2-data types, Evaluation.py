@@ -437,7 +437,6 @@ userdata = ('john', 'america', 1994, [77.0, 80.0, 85.0])
 userdata[3].append(73.0)
 print(userdata) #output: ('john', 'america', 1994, [77.0, 80.0, 85.0, 73.0]) 
 
-'''
 # Exercise 7
 
 connections = [
@@ -456,10 +455,26 @@ routesToRome = 0
 TotalFlightTime = 0
 for connection in connections:
     if connection[1] == 'Rome':
-        #averageFlightTime += connection[2]
         TotalFlightTime += connection[2]
         routesToRome += 1
-        
 print(TotalFlightTime, routesToRome)
 averageFlightTime = TotalFlightTime / routesToRome
 print(f'{routesToRome} connections lead to Rome with an average flight time of {averageFlightTime} minutes')
+
+'''
+
+# introduction to dictionaries
+
+emails= {
+    'John': 'john@example.com',
+    'Jane': 'jane@example.com',
+    'Bob': 'bob@example.com'
+}
+print(emails['John']) 
+
+SpanishAnimals ={
+    'cat': 'gato',
+    'dog': 'perro',
+    'bird': 'pajaro',
+    'horse': 'caballo',
+}
