@@ -351,7 +351,6 @@ print(numbers) #output: [1, 2, 3, 4, 5, ..., 100]
 numbers = [i for i in range(1,101) if i % 3 !=0]
 print(numbers) 
 
-'''
 
 # Nested list 
 
@@ -373,3 +372,14 @@ for row in table:
 
 table =[[i for i in range(1,6)] for j in range(4)]
 print(table) #output: [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5]]
+'''
+
+# adding  and multiplying lists
+
+listUS = ['new york', 'los angeles', 'chicago']
+listUK = ['london', 'manchester', 'birmingham']
+listall = listUS + listUK
+print(listall) #output: ['new york', 'los angeles', 'chicago', 'london', 'manchester', 'birmingham']
+
+listNum = [0, 1] * 10
+print(listNum)
