@@ -205,7 +205,7 @@ print(f"the top cities are: {top_cities[0:2]}") #output: the top cities are: ['N
 print(f"the top cities are: {top_cities[2:]}") #output: the top cities are: ['Tokyo', 'Paris']
 print(f"the top cities are: {top_cities[:3]}") #output: the top cities are: ['New York', 'London', 'Tokyo']]
 
- '''
+
 # Deleting elements from a list
 
 top_cities = ['New York', 'London', 'Tokyo', 'Paris']
@@ -217,3 +217,19 @@ print(top_cities) #output: ['New York', 'Paris']
 top_cities = ['New York', 'London', 'Tokyo', 'Paris']
 del top_cities[:]
 print(top_cities) #output: []
+top_cities = ['New York', 'London', 'Tokyo', 'Paris']
+del top_cities
+print(top_cities) #output: NameError: name 'top_cities' is not defined --> this is because we have deleted the entire list
+
+ '''
+# add elements to a list
+BookRatings = [5, 7, 8, 9, 10]
+BookRatings.append(4) # this will add 4 to the end of the list
+print(BookRatings) #output: [5, 7, 8, 9, 10, 4]
+BookRatings.insert(2, 6) # this will insert 6 at index 2
+print(BookRatings) #output: [5, 7, 6, 8, 9, 10, 4]
+BookRatings.extend([3, 2]) # this will add 3 and 2 to the end of the list
+print(BookRatings) #output: [5, 7, 6, 8, 9, 10, 4, 3, 2]    
+
+
+
