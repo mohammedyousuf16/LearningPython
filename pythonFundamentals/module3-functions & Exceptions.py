@@ -173,7 +173,6 @@ except Exception:
     print('something strange happend here, sorry')
 finally:
     print('please enter number except 0 to run program successfully')
-''' 
 
 # Propagation Exceptions
 
@@ -201,3 +200,15 @@ def getUserBday():
 
 getUserBday()
 print(userInfo)
+
+''' 
+
+#Assertion Exceptions
+
+def calculateInverse(number):
+    assert (number !=0), 'Got 0 as number'
+    # assert is use for debugging/ testing the code
+    # or for documenting your code
+    return 1/number
+
+print(calculateInverse(0))
