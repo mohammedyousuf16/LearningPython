@@ -106,9 +106,8 @@ unique([1, 1, 4, 5, 1])
 unique(['Mark', 'Mark', 'John', 'Anne'])
 unique([1,2,3,3,3,3,4,5])
 
-''' 
 
-# Recursion
+# Recursion 
 
 # factorial
 # 3! = 1 * 2 * 3 = 6
@@ -123,10 +122,27 @@ def getFactorial(number):
     return factorial
 print(getFactorial(5)) #output: 120
 
-# Recursion function
+# Recursive function
 
 def getFactorialRecursive(num):
     if num <=1:
         return 1
     return num * getFactorialRecursive(num -1)
 print(getFactorialRecursive(5))
+
+''' 
+# Generators
+
+def get_num():
+    for i in range(1,4):
+        yield i 
+generate= get_num()
+print(next(generate))
+print(next(generate))
+print(next(generate))
+
+for x in get_num():
+    print(x)
+
+number = list(get_num())
+print(number)
