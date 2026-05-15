@@ -170,5 +170,7 @@ except ValueError:
     print('you did not enter an integer')
 except ZeroDivisionError:
     print('you provided 0 and division by 0 is not possible, sorry')
-except:
+except Exception:
     print('something strange happend here, sorry')
+finally:
+    print('please enter number except 0 to run program successfully')
