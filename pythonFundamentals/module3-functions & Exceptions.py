@@ -146,7 +146,6 @@ for x in get_num():
 number = list(get_num())
 print(number)
 
-''' 
 # exceptions - intro
 
 try:
@@ -174,3 +173,31 @@ except Exception:
     print('something strange happend here, sorry')
 finally:
     print('please enter number except 0 to run program successfully')
+''' 
+
+# Propagation Exceptions
+
+userInfo =[]
+
+def getDay():
+    day=int(input('enter the day of your bday?'))
+    userInfo.append(day)
+
+def getMonth():
+    month=int(input('enter the bday month:'))
+    userInfo.append(month)
+
+def getYear():
+    year=int(input('what year is your bday: '))
+    userInfo.append(year)
+
+def getUserBday():
+    try:
+        getDay()
+        getMonth()
+        getYear()
+    except ValueError:
+        print('you entered incorrect data, bye')
+
+getUserBday()
+print(userInfo)
