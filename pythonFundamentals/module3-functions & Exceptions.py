@@ -94,7 +94,6 @@ def gatave(inputnum):
 
 ave =gatave([2, 3, 5])
 print(ave)
-'''
 # exercise 9
 def unique(lists):
     uniqueList=[]
@@ -106,3 +105,28 @@ def unique(lists):
 unique([1, 1, 4, 5, 1])
 unique(['Mark', 'Mark', 'John', 'Anne'])
 unique([1,2,3,3,3,3,4,5])
+
+''' 
+
+# Recursion
+
+# factorial
+# 3! = 1 * 2 * 3 = 6
+# 5! = 1 * 2 * 3 * 4 * 5 = 120
+
+
+# Iterative function
+def getFactorial(number):
+    factorial = 1
+    for x in range(1, number + 1):
+        factorial *= x
+    return factorial
+print(getFactorial(5)) #output: 120
+
+# Recursion function
+
+def getFactorialRecursive(num):
+    if num <=1:
+        return 1
+    return num * getFactorialRecursive(num -1)
+print(getFactorialRecursive(5))
