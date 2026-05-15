@@ -37,12 +37,35 @@ def printLetterCount(text='this is a default string', letter='a'):
 
 printLetterCount('how many letters a are in this sentence?')
 printLetterCount()
-'''
 #name scope
 def showTruth():
+    #global mistry #global variable now this will make the local variable to gloabl variable
     mistry = 'The cake is a lie' #local variable shawows the global variable
-    global mistry
-    mistry = 'The cake is a lie' #global variable
     print(mistry)
 mistry = 'The cake is not a lie' #global variable
 showTruth()
+'''
+#The None value
+
+printReturn = print('hello world')
+print(printReturn)
+
+x= None
+
+if x:
+    print('true')
+elif x is False:
+    print('False')
+else:
+    print('x is not true nor false') #output x is not true nor false
+
+if x is None:
+    print('yes')
+if x == None:
+    print('it does')
+
+def greet():
+    print('i will return None value')
+
+x= greet()
+print(x)
