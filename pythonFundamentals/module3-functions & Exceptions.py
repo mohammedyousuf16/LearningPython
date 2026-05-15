@@ -130,7 +130,6 @@ def getFactorialRecursive(num):
     return num * getFactorialRecursive(num -1)
 print(getFactorialRecursive(5))
 
-''' 
 # Generators
 
 def get_num():
@@ -146,3 +145,30 @@ for x in get_num():
 
 number = list(get_num())
 print(number)
+
+''' 
+# exceptions - intro
+
+try:
+    value = int(input('enter an integer'))
+    print(f"The inverse of {value} is {1/value}")
+except:
+    print('you did not enter an integer')
+
+try:
+    value = int(input('enter an integer'))
+    print(f"The inverse of {value} is {1/value}")
+except ValueError:
+    print('you did not enter an integer')
+except ZeroDivisionError:
+    print('you provided 0 and division by 0 is not possible, sorry')
+
+try:
+    value = int(input('enter an integer'))
+    print(f"The inverse of {value} is {1/value}")
+except ValueError:
+    print('you did not enter an integer')
+except ZeroDivisionError:
+    print('you provided 0 and division by 0 is not possible, sorry')
+except:
+    print('something strange happend here, sorry')
