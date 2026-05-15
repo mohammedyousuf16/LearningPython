@@ -24,7 +24,6 @@ def printLetterCount(text, letter):
     print(count)
 
 printLetterCount('hello world, welcome to my world of python learning that i have started', 'e')
-'''
 # default parameters values
 
 print('hello', 'how are you?', end='\n', sep='-')
@@ -38,3 +37,12 @@ def printLetterCount(text='this is a default string', letter='a'):
 
 printLetterCount('how many letters a are in this sentence?')
 printLetterCount()
+'''
+#name scope
+def showTruth():
+    mistry = 'The cake is a lie' #local variable shawows the global variable
+    global mistry
+    mistry = 'The cake is a lie' #global variable
+    print(mistry)
+mistry = 'The cake is not a lie' #global variable
+showTruth()
