@@ -84,7 +84,6 @@ average = getAverage([5.0, 2.5, 2.6, 9.2])
 if average > 4.0:
     print('the average is too high:' , average)
 
-'''
 def gatave(inputnum):
     sum = 0.0
     for num in inputnum:
@@ -95,3 +94,15 @@ def gatave(inputnum):
 
 ave =gatave([2, 3, 5])
 print(ave)
+'''
+# exercise 9
+def unique(lists):
+    uniqueList=[]
+    for item in lists:
+        if item not in uniqueList:
+            uniqueList.append(item)
+    print(uniqueList)
+            
+unique([1, 1, 4, 5, 1])
+unique(['Mark', 'Mark', 'John', 'Anne'])
+unique([1,2,3,3,3,3,4,5])
