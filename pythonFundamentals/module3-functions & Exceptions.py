@@ -44,7 +44,6 @@ def showTruth():
     print(mistry)
 mistry = 'The cake is not a lie' #global variable
 showTruth()
-'''
 #The None value
 
 printReturn = print('hello world')
@@ -69,3 +68,30 @@ def greet():
 
 x= greet()
 print(x)
+'''
+'''
+# Return Keyword
+
+def getAverage(inputNum):
+    sum = 0.0
+    for num in inputNum:
+        sum += num
+    average = sum / len(inputNum)
+    return average
+print('The average is :', getAverage ([5.0, 2.5, 2.6, 9.2]))
+
+average = getAverage([5.0, 2.5, 2.6, 9.2])
+if average > 4.0:
+    print('the average is too high:' , average)
+
+'''
+def gatave(inputnum):
+    sum = 0.0
+    for num in inputnum:
+        sum += num
+    average = sum / len(inputnum)
+    return average
+    print('this line will not be printed as it come after the return')
+
+ave =gatave([2, 3, 5])
+print(ave)
