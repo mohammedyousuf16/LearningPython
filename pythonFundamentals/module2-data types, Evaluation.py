@@ -494,7 +494,6 @@ cityRatings={
 }
 print(cityRatings['Paris']) #output: [8, 9, 10]
 
-'''
 # dictionary operations
 
 grades={}
@@ -519,3 +518,24 @@ for grade in grades.values():
 
 for stu, grade in grades.items():
     print(stu, 'got', grade) #output: John got A, Bob got C --> this will print the keys and values of the dictionary
+'''
+
+# Exercise 8
+
+sample = {
+    "mouth": "Mund",
+    "finger": "Finger",
+    "leg": "Bein",
+    "hand": "Hand",
+    "face": "Gesicht",
+    "nose": "Nase"
+}
+
+while True:
+    user=input("Enter a word in English or EXIT: ")
+    if user == 'EXIT':
+        break
+    elif user in sample:
+        print("Translation: ", sample[user])
+    elif user not in sample:
+        print("Sorry, the word is not in the dictionary.")
