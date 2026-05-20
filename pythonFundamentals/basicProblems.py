@@ -27,6 +27,7 @@ if num % 2 == 0:
     print('It is Even number')
 else:
     print('It is Odd number')
+
 # Solve using Match Statements
 # Question 4
 # Ask user to enter a day number (1-7) and print the corresponding day 
@@ -50,6 +51,7 @@ match num:
         print('day 7: Sun')
     case _:
         print('Enter a vaild number')
+
 # Question 5
 # Write a program with match case to simulate a simple calculator 
 # ask for 2 numbers and operator
@@ -66,21 +68,25 @@ match operation:
         print('Mul : ', num1 * num2)
     case 'div':
         print('Div : ', num1 / num2)
+
 # Question 6
 # Print numbers from 1 to 10 using for loop
 for i in range(1, 11):
     print(i)
+
 # Question 7
 # Print the multiplication table of a number (entered by user)
 num= int(input('Enter the number for multiplication table: '))
 for i in range(1, 11):
     print(f"{num} X {i} = {num*i}")
+
 # Question 8
 # Calculate the sum of all numbers from 1 to 100 using for loop
 sum= 0
 for i in range(1, 101):
     sum += i
 print(f"the sum of 1 to 100 is {sum}")
+
 # Question 9
 # Print the patten using for loop
 #*
@@ -89,7 +95,7 @@ print(f"the sum of 1 to 100 is {sum}")
 #****
 for i in range(1, 5):
     print('*'* i)
-'''
+
 # While loop
 # Question 10
 # Print the number from 1 to 10 using while loop
@@ -97,4 +103,12 @@ i=1
 while i<11:
     print(i)
     i +=1
+'''
 
+# Question 11
+# Write a program to keep asking the user to enter the correct password
+password= 'tom'
+while True:
+    pwd=input('Enter the password: ')
+    if password == pwd:
+        break
