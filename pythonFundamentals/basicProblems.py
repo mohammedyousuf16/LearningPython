@@ -70,9 +70,15 @@ match operation:
 # Print numbers from 1 to 10 using for loop
 for i in range(1, 11):
     print(i)
-'''
 # Question 7
 # Print the multiplication table of a number (entered by user)
 num= int(input('Enter the number for multiplication table: '))
 for i in range(1, 11):
     print(f"{num} X {i} = {num*i}")
+'''
+# Question 8
+# Calculate the sum of all numbers from 1 to 100 using for loop
+sum= 0
+for i in range(1, 101):
+    sum += i
+print(f"the sum of 1 to 100 is {sum}")
