@@ -103,7 +103,6 @@ i=1
 while i<11:
     print(i)
     i +=1
-'''
 
 # Question 11
 # Write a program to keep asking the user to enter the correct password
@@ -112,3 +111,15 @@ while True:
     pwd=input('Enter the password: ')
     if password == pwd:
         break
+
+'''
+
+# Question 12
+# using a while loop reverse the given number
+num= int(input('Enter the number to be reversed: '))
+reverse=0
+while num>0:
+    getLastDigit = num %10
+    reverse= reverse * 10 + getLastDigit
+    num= num // 10
+print(f"The reversed number is {reverse}")
