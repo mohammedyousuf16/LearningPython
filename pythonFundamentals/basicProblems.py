@@ -50,7 +50,6 @@ match num:
         print('day 7: Sun')
     case _:
         print('Enter a vaild number')
-'''
 # Question 5
 # Write a program with match case to simulate a simple calculator 
 # ask for 2 numbers and operator
@@ -67,3 +66,9 @@ match operation:
         print('Mul : ', num1 * num2)
     case 'div':
         print('Div : ', num1 / num2)
+'''
+# Question 6
+# Print numbers from 1 to 10 using for loop
+for i in range(1, 11):
+    print(i)
+
