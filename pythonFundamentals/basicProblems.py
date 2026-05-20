@@ -81,7 +81,6 @@ sum= 0
 for i in range(1, 101):
     sum += i
 print(f"the sum of 1 to 100 is {sum}")
-'''
 # Question 9
 # Print the patten using for loop
 #*
@@ -90,3 +89,12 @@ print(f"the sum of 1 to 100 is {sum}")
 #****
 for i in range(1, 5):
     print('*'* i)
+'''
+# While loop
+# Question 10
+# Print the number from 1 to 10 using while loop
+i=1
+while i<11:
+    print(i)
+    i +=1
+
