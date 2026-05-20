@@ -66,9 +66,13 @@ match operation:
         print('Mul : ', num1 * num2)
     case 'div':
         print('Div : ', num1 / num2)
-'''
 # Question 6
 # Print numbers from 1 to 10 using for loop
 for i in range(1, 11):
     print(i)
-
+'''
+# Question 7
+# Print the multiplication table of a number (entered by user)
+num= int(input('Enter the number for multiplication table: '))
+for i in range(1, 11):
+    print(f"{num} X {i} = {num*i}")
