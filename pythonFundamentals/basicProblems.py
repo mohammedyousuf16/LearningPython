@@ -27,7 +27,6 @@ if num % 2 == 0:
     print('It is Even number')
 else:
     print('It is Odd number')
-'''
 # Solve using Match Statements
 # Question 4
 # Ask user to enter a day number (1-7) and print the corresponding day 
@@ -51,3 +50,20 @@ match num:
         print('day 7: Sun')
     case _:
         print('Enter a vaild number')
+'''
+# Question 5
+# Write a program with match case to simulate a simple calculator 
+# ask for 2 numbers and operator
+# perform the operations using the match case.
+num1 = int(input('Enter the first number: '))
+num2 = int(input('Enter the second number: '))
+operation=input('Enter the operation to perform eg. add, sub, mul, div : ')
+match operation:
+    case 'add':
+        print('Add : ', num1 + num2)
+    case 'sub':
+        print('Sub : ', num1 - num2)
+    case 'mul':
+        print('Mul : ', num1 * num2)
+    case 'div':
+        print('Div : ', num1 / num2)
