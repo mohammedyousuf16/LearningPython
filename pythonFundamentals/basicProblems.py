@@ -112,7 +112,6 @@ while True:
     if password == pwd:
         break
 
-'''
 
 # Question 12
 # using a while loop reverse the given number
@@ -123,3 +122,12 @@ while num>0:
     reverse= reverse * 10 + getLastDigit
     num= num // 10
 print(f"The reversed number is {reverse}")
+'''
+
+# Question 13
+# use a for loop to print numbers from 1 to 10 but stop the loop if the number is (use break)
+
+for x in range(1, 11):
+    if x==7:
+        break
+    print(x)
