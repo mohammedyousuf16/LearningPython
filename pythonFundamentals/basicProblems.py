@@ -131,7 +131,6 @@ for x in range(1, 11):
         break
     print(x)
 
-'''
 
 # Question 14
 # Print number from 1 to 10 skipping the number 5 (use continue)
@@ -141,3 +140,20 @@ for x in range(1, 11):
         continue
     print(x)
 
+'''
+
+# Quesition 15
+# write a loop that goes through numbers 1 to 5 but does nothing for number 3 (use pass)
+for x in range(1, 6):
+    match x:
+        case 1:
+            print('1')
+        case 2:
+            print('2')
+        case 3:
+            pass
+        case 4:
+            print('4')
+        case 5:
+            print('5')
+    
