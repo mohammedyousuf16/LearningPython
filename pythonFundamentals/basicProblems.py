@@ -140,7 +140,6 @@ for x in range(1, 11):
         continue
     print(x)
 
-'''
 
 # Quesition 15
 # write a loop that goes through numbers 1 to 5 but does nothing for number 3 (use pass)
@@ -156,4 +155,14 @@ for x in range(1, 6):
             print('4')
         case 5:
             print('5')
-    
+'''
+
+# Question 16
+# Write the fibonacci series using recursive function 
+
+def fib(n):
+    if n == 0 or n==1:
+        return n
+    return fib(n-2) + fib(n-1)
+
+print(fib(6))
