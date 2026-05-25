@@ -198,11 +198,18 @@ def calArea(length, width=10):
 print(calArea(50, 100))
 print(calArea(70))
 
-'''
 # Question 21
 # Write a lamda function that add two numbers and test it
 
 add = lambda a , b: a + b
 print(add(3,6))
 
+'''
+
+# Question 22
+# create a list= [1,2,3,4,5] and use map() to get their squares
+
+list1 = [1,2,3,4,5]
+square= lambda x: x*x
+print(list(map(square, list1)))
 
