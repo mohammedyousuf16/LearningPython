@@ -249,7 +249,6 @@ import requests
 a= requests.get('https://api.github.com/')
 print(a.json())
 
-'''
 
 # Quesiton 27
 # write a function increment() that has local variable counter initialize to 0 and increment each time by 1 when its called. observe weather the value persist across function calls
@@ -262,4 +261,25 @@ increment()
 increment()
 increment()
 increment()
+
+'''
+
+# Question 28
+# Write a function multiply(a,b) that has a proper docstring explaing what it does then use help(multiply) to display the docstring
+
+def multiply(a, b):
+    '''
+    This function takes two values a and b
+
+    it multiplys a and b 
+
+    and returns the value of a*b 
+
+    this function needs 2 arguments as it has no default values
+    '''
+    return a*b
+
+print(multiply(3,6)) # output 18
+help(multiply)
+
 
