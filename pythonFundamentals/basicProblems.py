@@ -223,7 +223,6 @@ def factorial(n):
     
 print(factorial(0))
 
-'''
 
 # Quesion 24
 # write a recursive funciton sum of digits that returns the sum of all the digits of the given number
@@ -233,3 +232,12 @@ def sumOfDigits(n):
         return 0
     return n%10 + sumOfDigits(n//10)
 print(sumOfDigits(1234))
+
+'''
+
+# Question 25
+# Import the math module and use it -find the sq root of 144 and calculate sin(90) [hint use math.radians()]
+
+import math
+print(math.sqrt(144))
+print(math.sin(math.radians(90)))
