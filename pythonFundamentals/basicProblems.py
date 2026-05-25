@@ -262,13 +262,12 @@ increment()
 increment()
 increment()
 
-'''
 
 # Question 28
 # Write a function multiply(a,b) that has a proper docstring explaing what it does then use help(multiply) to display the docstring
 
 def multiply(a, b):
-    '''
+   # '' '
     This function takes two values a and b
 
     it multiplys a and b 
@@ -276,10 +275,19 @@ def multiply(a, b):
     and returns the value of a*b 
 
     this function needs 2 arguments as it has no default values
-    '''
+   # '' '
     return a*b
 
 print(multiply(3,6)) # output 18
 help(multiply)
 
+'''
+# Question 29
+# write a recursive function fibonacci(n) that prints the value
 
+def fibonacci(n):
+    if n==0 or n==1:
+        return 1
+    return fibonacci(n-2) + fibonacci(n-1)
+# 1,2,3,5,8,13....
+print(fibonacci(6))
