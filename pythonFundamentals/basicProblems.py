@@ -166,10 +166,19 @@ def fib(n):
 
 print(fib(6))
 
-'''
 
 # Question 17
 # create a funciton that greet that prints hello python learner when called
 def greet():
     print('Hello Python Learner!')
 greet()
+
+'''
+
+# Question 18
+# write a function square(num) that returnes the square of the given number. Test it with different numbers
+
+def square(num):
+    return num ** 2
+squ = square(7)
+print(squ)
