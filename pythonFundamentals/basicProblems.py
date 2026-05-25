@@ -190,7 +190,6 @@ def fullname(firstname, lastname):
     return fullName
 print(fullname('mohammed','yousuf'))
 
-'''
 # Question 20
 # Write a function calArea(length, width=10) that returns the area of the rectangle. Test it by calling a function with both the length and width, only using length (with defaul width)
 
@@ -198,4 +197,12 @@ def calArea(length, width=10):
     return length * width
 print(calArea(50, 100))
 print(calArea(70))
+
+'''
+# Question 21
+# Write a lamda function that add two numbers and test it
+
+add = lambda a , b: a + b
+print(add(3,6))
+
 
