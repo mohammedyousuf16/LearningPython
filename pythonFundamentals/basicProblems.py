@@ -204,7 +204,6 @@ print(calArea(70))
 add = lambda a , b: a + b
 print(add(3,6))
 
-'''
 
 # Question 22
 # create a list= [1,2,3,4,5] and use map() to get their squares
@@ -213,3 +212,14 @@ list1 = [1,2,3,4,5]
 square= lambda x: x*x
 print(list(map(square, list1)))
 
+'''
+
+# Question 23
+# write a recursive function factorial(n) that returns the factorial of the number
+
+def factorial(n):
+    if n==1 or n== 0:
+        return 1
+    return factorial(n-1) * n
+    
+print(factorial(0))
