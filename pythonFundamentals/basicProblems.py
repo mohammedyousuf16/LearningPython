@@ -182,7 +182,6 @@ def square(num):
 squ = square(7)
 print(squ)
 
-'''
 # Question 19
 # write a function fullname(firstname, lastname) that takes firstname and lastname as parameters and returns single string in the format 'first last'
 
@@ -190,3 +189,13 @@ def fullname(firstname, lastname):
     fullName= firstname + ' '+ lastname
     return fullName
 print(fullname('mohammed','yousuf'))
+
+'''
+# Question 20
+# Write a function calArea(length, width=10) that returns the area of the rectangle. Test it by calling a function with both the length and width, only using length (with defaul width)
+
+def calArea(length, width=10):
+    return length * width
+print(calArea(50, 100))
+print(calArea(70))
+
