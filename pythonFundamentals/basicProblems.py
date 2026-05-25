@@ -233,7 +233,6 @@ def sumOfDigits(n):
     return n%10 + sumOfDigits(n//10)
 print(sumOfDigits(1234))
 
-'''
 
 # Question 25
 # Import the math module and use it -find the sq root of 144 and calculate sin(90) [hint use math.radians()]
@@ -241,3 +240,12 @@ print(sumOfDigits(1234))
 import math
 print(math.sqrt(144))
 print(math.sin(math.radians(90)))
+
+'''
+
+# Question 26
+# Install and import the request module and use it to fetch data from 'https://api.github.com'
+
+import requests
+a= requests.get('https://api.github.com/')
+print(a.json())
