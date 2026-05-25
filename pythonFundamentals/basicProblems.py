@@ -155,7 +155,6 @@ for x in range(1, 6):
             print('4')
         case 5:
             print('5')
-'''
 
 # Question 16
 # Write the fibonacci series using recursive function 
@@ -166,3 +165,11 @@ def fib(n):
     return fib(n-2) + fib(n-1)
 
 print(fib(6))
+
+'''
+
+# Question 17
+# create a funciton that greet that prints hello python learner when called
+def greet():
+    print('Hello Python Learner!')
+greet()
