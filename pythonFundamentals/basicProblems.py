@@ -212,7 +212,6 @@ list1 = [1,2,3,4,5]
 square= lambda x: x*x
 print(list(map(square, list1)))
 
-'''
 
 # Question 23
 # write a recursive function factorial(n) that returns the factorial of the number
@@ -223,3 +222,14 @@ def factorial(n):
     return factorial(n-1) * n
     
 print(factorial(0))
+
+'''
+
+# Quesion 24
+# write a recursive funciton sum of digits that returns the sum of all the digits of the given number
+
+def sumOfDigits(n):
+    if n==0:
+        return 0
+    return n%10 + sumOfDigits(n//10)
+print(sumOfDigits(1234))
