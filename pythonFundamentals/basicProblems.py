@@ -241,7 +241,6 @@ import math
 print(math.sqrt(144))
 print(math.sin(math.radians(90)))
 
-'''
 
 # Question 26
 # Install and import the request module and use it to fetch data from 'https://api.github.com'
@@ -249,3 +248,18 @@ print(math.sin(math.radians(90)))
 import requests
 a= requests.get('https://api.github.com/')
 print(a.json())
+
+'''
+
+# Quesiton 27
+# write a function increment() that has local variable counter initialize to 0 and increment each time by 1 when its called. observe weather the value persist across function calls
+
+def increment():
+    counter =0
+    counter +=1
+    print(counter)
+increment()
+increment()
+increment()
+increment()
+
