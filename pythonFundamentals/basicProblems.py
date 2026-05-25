@@ -173,7 +173,6 @@ def greet():
     print('Hello Python Learner!')
 greet()
 
-'''
 
 # Question 18
 # write a function square(num) that returnes the square of the given number. Test it with different numbers
@@ -182,3 +181,12 @@ def square(num):
     return num ** 2
 squ = square(7)
 print(squ)
+
+'''
+# Question 19
+# write a function fullname(firstname, lastname) that takes firstname and lastname as parameters and returns single string in the format 'first last'
+
+def fullname(firstname, lastname):
+    fullName= firstname + ' '+ lastname
+    return fullName
+print(fullname('mohammed','yousuf'))
