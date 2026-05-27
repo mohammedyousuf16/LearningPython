@@ -328,7 +328,6 @@ print(numbers)
 numbers.remove(2)
 print(numbers)
 
-'''
 
 # Question 33
 #Create a list names = ["Alice", "Bob", "Charlie"] and use the insert() method to add "David" at index 1 .
@@ -336,3 +335,18 @@ print(numbers)
 names = ["Alice", "Bob", "Charlie"]
 names.insert(1, 'david')
 print(names)
+
+'''
+
+#question 34
+#Create a tuple coordinates = (10, 20) and print both elements.
+# Try to modify the tuple by setting coordinates[0] = 50 — note what happens
+#Convert the tuple to a list, change its first element to 50 , and convert it back to a tuple.
+coordinates=(10,20)
+print(coordinates)
+#coordinates[0]=50 #thows error
+corlist = list(coordinates)
+corlist[0]= 50
+coordinates= tuple(corlist)
+print(coordinates)
+
