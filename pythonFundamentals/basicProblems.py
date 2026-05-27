@@ -313,7 +313,6 @@ print(numbers)
 print(numbers[0:3])
 print(numbers[-3:])
 
-'''
 
 # Question 32
 #Start with numbers = [5, 2, 9, 1, 7] and do the following:
@@ -328,3 +327,12 @@ numbers.append(10)
 print(numbers)
 numbers.remove(2)
 print(numbers)
+
+'''
+
+# Question 33
+#Create a list names = ["Alice", "Bob", "Charlie"] and use the insert() method to add "David" at index 1 .
+
+names = ["Alice", "Bob", "Charlie"]
+names.insert(1, 'david')
+print(names)
