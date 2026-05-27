@@ -303,7 +303,6 @@ fruits[1]= "orange"
 print(fruits)
 print(len(fruits))
 
-'''
 
 # question 31
 #Create a list of numbers from 1 to 10 .
@@ -313,3 +312,19 @@ numbers=[i for i in range(1,11)]
 print(numbers)
 print(numbers[0:3])
 print(numbers[-3:])
+
+'''
+
+# Question 32
+#Start with numbers = [5, 2, 9, 1, 7] and do the following:
+#Sort the list in ascending order.
+#Append the number 10 to the list. 
+#Remove the number 2 from the list.
+
+numbers= [5,2,9,1,7]
+numbers.sort()
+print(numbers)
+numbers.append(10)
+print(numbers)
+numbers.remove(2)
+print(numbers)
