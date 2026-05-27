@@ -360,7 +360,6 @@ print(my_set)
 my_set.remove(2)
 print(my_set)
 
-'''
 #question 36
 #Create two sets: a = {1, 2, 3}, b = {3, 4, 5} find their union, intersection, difference
 
@@ -370,3 +369,18 @@ print(a.union(b))
 print(a.intersection(b))
 print(a.difference(b))
 print(b.difference(a))
+
+'''
+
+#question 37
+#Create a dictionary student = {"name": "John", "age": 20, "grade": "A"} and:
+#Print the value of "name" .
+#Change "grade" to "A+" .
+#Add a new key "city" with value "Delhi" .
+
+student = {"name": "John", "age": 20, "grade": "A"}
+print(student['name'])
+student['grade']= 'A+'
+print(student)
+student['city']= 'delhi'
+print(student)
