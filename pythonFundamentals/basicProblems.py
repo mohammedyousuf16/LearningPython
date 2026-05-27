@@ -370,7 +370,6 @@ print(a.intersection(b))
 print(a.difference(b))
 print(b.difference(a))
 
-'''
 
 #question 37
 #Create a dictionary student = {"name": "John", "age": 20, "grade": "A"} and:
@@ -384,3 +383,22 @@ student['grade']= 'A+'
 print(student)
 student['city']= 'delhi'
 print(student)
+
+'''
+#question 38
+#Create a dictionary of three friends and their phone numbers. Use:
+#keys() to get all names
+#values() to get all numbers
+#items() to loop over key-value pairs and print them
+
+myDic={
+    'james': 98898989,
+    'bond': 123123123,
+    'bob': 1209090912,
+}
+print(myDic.keys())
+print(myDic.values())
+
+for key, value in myDic.items():
+    print(key, value)
+
