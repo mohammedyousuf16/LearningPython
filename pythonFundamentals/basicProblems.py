@@ -291,7 +291,6 @@ def fibonacci(n):
 # 1,2,3,5,8,13....
 print(fibonacci(6))
 
-'''
 # Question 30
 #Create a list fruits = ["apple", "banana", "cherry"] .
 #Print the first fruit.
@@ -303,3 +302,14 @@ print(fruits[0])
 fruits[1]= "orange"
 print(fruits)
 print(len(fruits))
+
+'''
+
+# question 31
+#Create a list of numbers from 1 to 10 .
+#Print the first three numbers using slicing.
+#Print the last three numbers using slicing.
+numbers=[i for i in range(1,11)]
+print(numbers)
+print(numbers[0:3])
+print(numbers[-3:])
