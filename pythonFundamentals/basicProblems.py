@@ -401,7 +401,6 @@ print(myDic.values())
 for key, value in myDic.items():
     print(key, value)
 
-'''
 
 #Question 39
 # Create a class Car with a method drive() that prints "Car is moving" .
@@ -413,3 +412,20 @@ class Car:
     
 c1=Car()
 c1.drive()
+
+'''
+
+# Question 40
+
+# Create a class Person with a constructor ( __init__ ) that accepts name and age
+# as arguments and stores them as instance attributes.
+# Create an object and print the person’s name and age.
+
+class Person:
+    def __init__(self, name, age):
+        self.name= name
+        self.age= age
+
+p1= Person('John', 32)
+print(p1.name)
+print(p1.age)
