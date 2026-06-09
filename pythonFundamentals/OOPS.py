@@ -28,7 +28,6 @@ e1 = Employee(32000, 'John', 5)
 print(e1.get_salary())
 e1.get_Info()
 
-'''
 
 # instance and class attribute
 
@@ -52,3 +51,25 @@ print(Employee.company)
 
 #Object introspection
 print(dir(e1))
+
+'''
+
+# Inheritance and Polymorphism
+
+class Animal: # Parent class (superclass)
+    location = "Australia"
+    def __init__(self, name):
+        self.name = name
+    def speak(self):
+        print("Speaking now....")
+
+class Dog(Animal): # This is how inheritance is done in Python
+    def speak(self):
+        super().speak() # We are using the speak function of the parent class
+        print("Woof!")
+
+a = Animal("Dog")
+a.speak()
+d = Dog("Bruno")
+d.speak()
+print(d.location)
