@@ -413,7 +413,6 @@ class Car:
 c1=Car()
 c1.drive()
 
-'''
 
 # Question 40
 
@@ -429,3 +428,21 @@ class Person:
 p1= Person('John', 32)
 print(p1.name)
 print(p1.age)
+
+'''
+
+# # Question 41
+# Create a base class Animal with a method sound() that prints "Some sound" .
+# Create a derived class Dog that overrides sound() to print "Bark!" .
+# Create an object of Dog and call sound()
+
+class Animal:
+    def sound(self):
+        print('some sound')
+
+class Dog(Animal):
+    def sound(self):
+        print('Bark!')
+
+d1=Dog()
+d1.sound()
