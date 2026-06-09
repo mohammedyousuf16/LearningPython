@@ -201,7 +201,6 @@ def getUserBday():
 getUserBday()
 print(userInfo)
 
-''' 
 
 #Assertion Exceptions
 
@@ -212,3 +211,22 @@ def calculateInverse(number):
     return 1/number
 
 print(calculateInverse(0))
+''' 
+
+# Match statement
+
+num = int(input('enter a number between 1 and 10:'))
+
+match num:
+    case 1:
+        print('1 is a luckey number')
+    case 3:
+        print('3 is a luckey number')
+    case 5:
+        print('5 is a luckey number')
+    case 7:
+        print('7 is a luckey number')
+    case 9:
+        print('9 is a luckey number')
+    case _:
+        print('better luck next time')
