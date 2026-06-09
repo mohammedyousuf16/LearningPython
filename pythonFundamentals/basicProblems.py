@@ -384,7 +384,6 @@ print(student)
 student['city']= 'delhi'
 print(student)
 
-'''
 #question 38
 #Create a dictionary of three friends and their phone numbers. Use:
 #keys() to get all names
@@ -402,3 +401,15 @@ print(myDic.values())
 for key, value in myDic.items():
     print(key, value)
 
+'''
+
+#Question 39
+# Create a class Car with a method drive() that prints "Car is moving" .
+# Create an object of Car and call drive() .
+
+class Car:
+    def drive(self):
+        print('car is moving')
+    
+c1=Car()
+c1.drive()
