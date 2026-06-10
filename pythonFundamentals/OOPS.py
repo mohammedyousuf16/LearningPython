@@ -97,7 +97,6 @@ p2 = Point(6, 3)
 p = p1 + p2 # We overloaded the + Operator by writing __add__ function
 p.print_point() 
 
-'''
 
 #Decorators in python
 
@@ -122,4 +121,20 @@ say_hello()
 #     print("Hello!")
 #     print("I have executed this function....")
 
+'''
 
+# Decorators with arguments
+
+def repeat(n):
+    def decorator(func):
+        def wrapper(a):
+            for i in range(n):
+                func(a)
+        return wrapper
+    return decorator
+
+@repeat(7)
+def hello(a):
+    print(f'say hello {a}')
+
+hello('harry')
