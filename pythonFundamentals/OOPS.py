@@ -73,7 +73,6 @@ d = Dog("Bruno")
 d.speak()
 print(d.location)
 
-'''
 
 # Method Overriding and operator overloading
 
@@ -97,4 +96,30 @@ p2 = Point(6, 3)
 # p = p1.sum(p2) # Returns a new point which is sum of p1 and p2
 p = p1 + p2 # We overloaded the + Operator by writing __add__ function
 p.print_point() 
+
+'''
+
+#Decorators in python
+
+# Decorator is a function that takes a function, it creates a new function inside its body (wrapper). Then it returns that new function
+def decorator(func):
+    def wrapper():
+        print("I am about to execute a function....")
+        func()
+        print("I have executed this function....")
+    return wrapper
+
+@decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+# f = decorator(say_hello)
+# f()
+#     f will look something like this
+# def f():
+#     print("I am about to execute a function....")
+#     print("Hello!")
+#     print("I have executed this function....")
+
 
