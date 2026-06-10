@@ -22,7 +22,6 @@ print(len(e))
 # print(str(e))
 # print(repr(e))
 
-'''
 #Exception handeling and custom Errors
 
 
@@ -80,3 +79,46 @@ def divide(a, b):
 a = int(input("Enter number 1: "))
 b = int(input("Enter number 2: "))
 divide(a, b)
+
+'''
+#---Map---
+
+numbers = [1, 2, 3, 45, 4, 21]
+
+# def square(x):
+#     return x * x 
+
+
+new = list(map(lambda x: x*x, numbers))
+print(new)
+
+
+#---Filter---
+
+# def is_greater_than_9(x):
+#     if x>9:
+#         return True
+#     else:
+#         return False
+    
+a = [1, 3, 5, 234, 34, 32, 6543, 23, 2 ,5 , 6, 7 ,43]
+
+new = list(filter(lambda x: x>9, a))
+print(new)
+
+#---Reduce---
+
+from functools import reduce
+
+numbers = [1, 2, 3, 4, 5, 6]
+#         [3, 3, 4, 5, 6]
+#         [6, 4, 5, 6]
+#         [10, 5, 6]
+#         [15, 6]
+#         [21]
+
+def sum(a, b):
+    return a + b 
+
+c = reduce(sum, numbers)
+print(c)
