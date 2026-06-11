@@ -156,7 +156,6 @@ def sum(*args):
 
 print(sum(3,23,5,56,67,5))
 
-'''
 
 #Kwargs
 
@@ -166,3 +165,15 @@ def marks(**kwargs):
         print(f"The marks of {item} is {kwargs[item]}")
 
 marks(shubham=34, vikrant=54, jack=34, Marie=90, Priya=45)
+
+'''
+
+# Args and Kwargs togeather
+
+def func1(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+func1(1, 2, 4, 5, jack=34, jill=32, marie=31)
+
+
