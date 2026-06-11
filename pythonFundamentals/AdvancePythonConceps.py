@@ -122,7 +122,6 @@ def sum(a, b):
 c = reduce(sum, numbers)
 print(c)
 
-'''
 
 #Walrus Operator
 
@@ -145,3 +144,15 @@ while(data:=input("Enter the value: ")):
     print(data)
     if data == "q":
         break 
+
+'''
+
+# Args 
+
+def sum(*args):
+    total=0
+    for item in args:
+        total+= item
+    return total
+
+print(sum(3,23,5,56,67,5))
