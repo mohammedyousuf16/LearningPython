@@ -14,7 +14,6 @@ def say_hello():
 
 say_hello()
 
-'''
 
 # Question 2
 
@@ -39,4 +38,38 @@ def sum(n):
         total += i
     print(f'sum on {n} is {total}')
 print(sum(1000000))
+
+'''
+
+# Question 3
+
+# Create a class Employee with a private attribute _salary .
+# Use @property to define a getter for salary .
+# Use @salary.setter to prevent setting negative values (print a warning
+# instead).
+# Create an object and test by setting positive and negative salaries.
+
+class Employee:
+
+    def __init__(self, salary):
+        self.__salary= salary
+
+    @property
+    def salary(self):
+        return self.__salary
+    
+    @salary.setter
+    def salary(self, newsalray):
+        if(newsalray>0):
+            self.__salary= newsalray
+        else:
+            print('salary cant be in negative')
+
+e1= Employee(3000)
+print(e1.salary)# output 3000
+e1.salary=-5000 # output salary cant be in negative
+print(e1.salary)# output 3000
+e1.salary=5000 # output "sets the __salary to 5000"
+print(e1.salary)# output 5000
+
 
