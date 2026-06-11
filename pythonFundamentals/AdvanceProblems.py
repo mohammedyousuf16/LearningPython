@@ -39,7 +39,6 @@ def sum(n):
     print(f'sum on {n} is {total}')
 print(sum(1000000))
 
-'''
 
 # Question 3
 
@@ -72,4 +71,25 @@ print(e1.salary)# output 3000
 e1.salary=5000 # output "sets the __salary to 5000"
 print(e1.salary)# output 5000
 
+'''
 
+# Question 4 
+# Create a class MathUtils with:
+# A @staticmethod called add(a, b) that returns a + b .
+# A @classmethod called description(cls) that prints "This is a utility class for math operations."
+# Call both methods without creating an object
+
+class MathUtils:
+    def __init__(self):
+        pass
+
+    @staticmethod
+    def add(a,b):
+        return a+b
+    
+    @classmethod
+    def description(cls):
+        return "This is a utility class for math operations."
+
+print(MathUtils.add(2,4))
+print(MathUtils.description())
