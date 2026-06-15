@@ -120,7 +120,6 @@ print(len(b1))
 print(str(b2))
 print(len(b2))
 
-'''
 
 # Question 6
 
@@ -153,3 +152,28 @@ except ValueError:
 
 except NegativeNumberError as error:
     print(f'Invalid input: {error}')
+
+'''
+
+# Question 7
+
+# map(), filter(), and reduce()
+# Use map() to convert [1, 2, 3, 4, 5] into their cubes.
+# Use filter() to get only even numbers from [10, 11, 12, 13, 14] .
+# Use reduce() from functools to find the product of all elements in [1, 2,
+# 3, 4] .
+
+from functools import reduce
+
+list1 = [1,2,3,4,5]
+square= list(map(lambda x: x * x, list1 )) 
+print(square) # output: [1, 4, 9, 16, 25]
+
+list2=[10, 11, 12, 13, 14]
+even= list(filter(lambda x:  x%2 ==0 , list2))
+print(even) # output: [10, 12, 14]
+
+list3= [1, 2, 3, 4] 
+reduc= reduce(lambda x,y: x*y,list3)
+print(reduc) # output: 24
+
