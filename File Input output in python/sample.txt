@@ -1,3 +1,1 @@
-Hi i am yousuf i love programming languages
-programming languages such as python, java, java script
-now currently i am at python file input output
+ This is opened in write mode and all the data in the file will be wiped and the new data will be pasted inside  THIS IS FROM THE APPEND WHICH WAS OPENED WITH THE "WITH" KEYWORD
