@@ -93,7 +93,6 @@ class MathUtils:
 print(MathUtils.add(2,4))
 print(MathUtils.description())
 
-'''
 
 # Question 5
 
@@ -120,3 +119,37 @@ print(str(b1))
 print(len(b1))
 print(str(b2))
 print(len(b2))
+
+'''
+
+# Question 6
+
+# Write a program that asks the user to enter a number and handles:
+# ValueError if the input is not a number
+# ZeroDivisionError if you try to divide by zero
+# Create a custom exception NegativeNumberError and raise it when the user enters a negative number.
+
+class NegativeNumberError(Exception):
+    pass
+
+try:
+    num1= int(input('enter the number 1: '))
+    num2= int(input('enter the number 2: '))
+    
+    if num1 < 0 or num2 <0:
+        raise NegativeNumberError("Negative numbers are not allowed!")
+        
+
+    def divide(a,b):
+        print(a/b)
+    
+    divide(num1, num2)
+    
+except ZeroDivisionError:
+    print("can't didvide by the number zero")
+
+except ValueError:
+    print('please enter a valid number')
+
+except NegativeNumberError as error:
+    print(f'Invalid input: {error}')
