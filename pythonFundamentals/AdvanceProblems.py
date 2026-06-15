@@ -153,7 +153,6 @@ except ValueError:
 except NegativeNumberError as error:
     print(f'Invalid input: {error}')
 
-'''
 
 # Question 7
 
@@ -177,3 +176,25 @@ list3= [1, 2, 3, 4]
 reduc= reduce(lambda x,y: x*y,list3)
 print(reduc) # output: 24
 
+
+'''
+
+# Quesiton 8
+
+# Walrus Operator
+# Use the walrus operator to read input until the user enters "quit" . Print each
+# input as it is entered.
+
+while(text:=input('enter something: '))!= 'quit':
+    print(f'you entered : {text} ')
+
+
+
+# Use the walrus operator in a list comprehension to store lengths of words
+# from ["python", "rocks", "ai"] in a list while filtering out words shorter
+# than 4 characters.
+
+words= ["python", "rocks", "ai"]
+
+lengths= [n for w in words if (n := len(w))>=4]
+print(lengths)
