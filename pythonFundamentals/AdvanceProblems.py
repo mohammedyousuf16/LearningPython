@@ -177,7 +177,6 @@ reduc= reduce(lambda x,y: x*y,list3)
 print(reduc) # output: 24
 
 
-'''
 
 # Quesiton 8
 
@@ -198,3 +197,31 @@ words= ["python", "rocks", "ai"]
 
 lengths= [n for w in words if (n := len(w))>=4]
 print(lengths)
+
+'''
+
+# Question 9
+
+# Write a function sum_all(*args) that accepts any number of integers and returns their sum.
+
+def sum(*args):
+    val=0
+    for num in args:
+        val+= num
+    return val
+
+print(sum(2,7))
+
+# Write a function print_details(**kwargs) that prints key-value pairs passed as arguments, for example: 
+#print_details(name="Alice", age=25, city="Delhi")
+# Output:
+# name: Alice
+# age: 25
+# city: Delhi
+
+
+def print_details(**kwargs):
+    for item in kwargs:
+        print(f'{item}: {kwargs[item]}')
+
+print_details(name="Alice", age=25, city="Delhi")
