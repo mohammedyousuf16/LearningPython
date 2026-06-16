@@ -51,7 +51,6 @@ import shutil
 shutil.copy('jonny.txt', 'dir/')
 shutil.move('notes.txt','myfolder')
 shutil.rmtree('dir/')
-'''
 
 
 # Question 5
@@ -72,3 +71,24 @@ if (__name__)== "__main__":
     filename= sys.argv[1]
     num_lines= countLines(filename)
     print(f'the number of lines are: {num_lines} in {filename}')
+'''
+
+
+# Question 6
+
+# Write a command-line utility search_word.py that takes two arguments:
+# A filename
+# A word to search and prints how many times the word appears in the file.
+
+import sys
+
+def countWords(word, string):
+    pass
+
+if __name__ == "__main__":
+    filename = sys.argv[1]
+    word = sys.argv[2]
+    with open(filename)as f:
+        string= f.read()
+        n= string.count(word)
+        print(f'there are {n} time the word:\'{word}\' in the {filename}')
