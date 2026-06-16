@@ -10,7 +10,6 @@ with open('notes.txt', 'w') as f:
 with open('notes.txt', 'r') as f:
     data= f.read()
     print(data)
-'''
 
 # Question 2
 # Write a program that writes three lines of text to a file tasks.txt .
@@ -27,3 +26,17 @@ with open('task.txt', 'a') as f:
 with open('task.txt', 'r') as f:
     data=f.read()
     print(data)
+'''
+
+
+# Question 3
+
+# Use the os module to:
+# Print the current working directory
+# List all files and folders in the current directory
+# Create a new folder my_folder
+
+import os
+print(os.getcwd())
+print(os.listdir())
+os.mkdir('myfolder')
