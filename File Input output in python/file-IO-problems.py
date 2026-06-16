@@ -26,7 +26,6 @@ with open('task.txt', 'a') as f:
 with open('task.txt', 'r') as f:
     data=f.read()
     print(data)
-'''
 
 
 # Question 3
@@ -40,3 +39,16 @@ import os
 print(os.getcwd())
 print(os.listdir())
 os.mkdir('myfolder')
+'''
+
+# Question 4
+
+# Use the shutil module to:
+# Copy a file from one folder to another
+# Move a file to a new folder
+# Delete a file (careful: irreversible!)
+
+import shutil
+shutil.copy('jonny.txt', 'dir/')
+shutil.move('notes.txt','myfolder')
+shutil.rmtree('dir/')
