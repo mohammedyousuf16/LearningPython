@@ -15,7 +15,7 @@ questions = [
 prizes = [100000, 320000, 400000, 450000,  500000, 1000000, 2000000, 3000000, 4000000, 5000000, 6000000]
 
 i =0
-
+chances=3
 for question in questions:
     print(question[0])
     print(f'a. {question[1]}')
@@ -27,9 +27,15 @@ for question in questions:
     ans= int(input('enter the correc option 1 for a, 2 for b, 3 for c, 4 for d:\n '))
     if ans==question[5]:
         print('correct answer')
+        print(f'you won {prizes[i]}')
+        i +=1
     else:
         print('wrong answer!')
-        print(f'The correct answer was {question[question[5]]}, better luck next time')
-        break
-    print(f'you won {prizes[i]}')
-    i +=1
+        chances-=1
+        print(f'The correct answer was {question[question[5]]}, number of chances left {chances}')
+        if chances==0:
+            print('better luck next time!')
+            break
+        
+    
+    
