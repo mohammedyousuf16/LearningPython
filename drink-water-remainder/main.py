@@ -7,4 +7,4 @@ while True:
         title='Water Reminder',
         message='Please sip some water',
                         )
-    time.sleep(5)
+    time.sleep(60*60)
