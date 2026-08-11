@@ -31,11 +31,11 @@ Object-Oriented Programming (OOP)
 Modules and Packages
 Basic Projects
 <H3>📂 Repository Structure </H3>
-Learning-Python/
-│
-├── PythonFundamentals/
-├──projects_Name1/
-├── projects_Name2/
+Learning-Python/<br>
+│<br>
+├── PythonFundamentals/<br>
+├──projects_Name1/<br>
+├── projects_Name2/<br>
 
 <H4>🎯 Goal </H4>
 
