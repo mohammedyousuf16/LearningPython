@@ -1,4 +1,3 @@
-import os
 from openai import OpenAI
 
 key= "YOUR-API-KEY"
@@ -19,11 +18,17 @@ def completion(message):
         }
     )
 
-    chat_completion=client.chat.completions.create(messages=messages,
+chat_completion=client.chat.completions.create(messages=messages,
 
     model="gpt-4o"
     )
-    print(chat_completion)
+
+message={
+    'role': 'assistant',
+    'content': chat_completion.choices[0].messages.content
+}
+messages.append(messages)
+print(f'Jarvis:{message['content']}')
 
 if __name__ == "__main__":
     user_question=input('Hi im Jarvis, ask me anything')
